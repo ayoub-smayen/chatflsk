@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="loginContainer">
+  <form class="loginForm" method="POST">
+      <h1>Welcome!</h1>
+    <input type="text" placeholder="Username" size="25" name="username" id="loginUsernameText" />
+    <input type="password" placeholder="Password" size="25" name="password" id="loginPasswordText" />
+    <div class="loginButtons">
+          <button type="submit" id="loginBtn">Login</button>
+          <button type="submit" id="signupBtn">Sign Up</button>
+    </div>
+  </form>
+  <div class="signupModal">
+    <div class="signupModalContainer">
+    </div>
+  </div>
+</div>
+
+{% endblock %}
